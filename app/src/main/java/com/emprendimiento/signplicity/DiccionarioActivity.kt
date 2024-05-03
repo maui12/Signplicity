@@ -1,31 +1,20 @@
 package com.emprendimiento.signplicity
 
-import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class MainActivity : AppCompatActivity() {
+class DiccionarioActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_diccionario)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
-        //boton diccionario
-        var buttonDiccionario:Button = findViewById(R.id.buttonDiccionario)
-        buttonDiccionario.setOnClickListener{pushDiccionario()}
-    }
-
-    //funcionalidad boton diccionario
-    private fun pushDiccionario() {
-        startActivity(Intent(this,DiccionarioActivity::class.java))
     }
 }
