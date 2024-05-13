@@ -3,4 +3,6 @@
     <string name="title_activity_diccionario">DiccionarioActivity</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
+    <string name="prefs_file">com.emprendimiento.signplicity.PREFERENCE_FILE_KEY</string>
+    <string name="default_web_client_id">654615777624-c78cj2gald9hagnibpp3at3vptp8r0cc.apps.googleusercontent.com</string>
 </resources>

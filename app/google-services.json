@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "654615777624",
+    "project_id": "signplicity-67283",
+    "storage_bucket": "signplicity-67283.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:654615777624:android:9bb8ca17581a28fc61952d",
+        "android_client_info": {
+          "package_name": "com.emprendimiento.signplicity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "654615777624-272al3qk1ns80j2r0b2decd5i7mm5iq6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.emprendimiento.signplicity",
+            "certificate_hash": "4087e4d768de76690a000a38bc35c138a350ef3b"
+          }
+        },
+        {
+          "client_id": "654615777624-c78cj2gald9hagnibpp3at3vptp8r0cc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8duN-of7rllWAilFplKrfNKcx_2-DM-U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "654615777624-c78cj2gald9hagnibpp3at3vptp8r0cc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

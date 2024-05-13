@@ -7,26 +7,47 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!-- Botones izquierda-->
+
     <!-- Botones derecha-->
 
     <Button
-        android:id="@+id/buttonDiccionario"
+        android:id="@+id/buttonPerfil"
         android:layout_width="150dp"
         android:layout_height="150dp"
-
-        android:text="Diccionario"
-        android:textSize="16sp"
+        android:background="@drawable/button_menu_3_orange"
+        android:text="Perfil"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintHorizontal_bias="0.877"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.38" />
+        app:layout_constraintVertical_bias="0.81" />
+
+    <Button
+        android:id="@+id/buttonJuegos"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/button_menu_4_green"
+        android:drawableTop="@drawable/dictionary_icon"
+        android:fontFamily="@font/rowdies_light"
+        android:paddingTop="50dp"
+        android:text="Juegos"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.497" />
 
     <Button
         android:id="@+id/buttonNoticias"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:background="@drawable/button_menu_2_pink"
         android:text="Noticias"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -34,42 +55,66 @@
         app:layout_constraintHorizontal_bias="0.153"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.693" />
-
-    <!-- Botones izquierda-->
-    <Button
-        android:id="@+id/buttonJuegos"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:text="Juegos"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.877"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.38" />
+        app:layout_constraintVertical_bias="0.81" />
 
     <Button
-        android:id="@+id/buttonPerfil"
+        android:id="@+id/buttonDiccionario"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:text="Perfil"
+        android:background="@drawable/button_menu_1_blue"
+        android:drawableTop="@drawable/dictionary_icon"
+        android:fontFamily="@font/rowdies_light"
+        android:paddingTop="50dp"
+        android:text="Diccionario"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintHorizontal_bias="0.153"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.693" />
+        app:layout_constraintVertical_bias="0.497" />
+
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="logout"
+        android:background="@drawable/button_menu_3_orange"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.036" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bienvenido a Signplicity!"
+        android:fontFamily="@font/rowdies_bold"
+        android:text="Bienvenido a \n Signplicity!"
+        android:textColor="@color/black"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.133" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cargando.."
+        android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.158" />
+        app:layout_constraintVertical_bias="0.269" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
