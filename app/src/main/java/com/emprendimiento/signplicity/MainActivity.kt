@@ -17,6 +17,7 @@ import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
 
+//Menu principal
 class MainActivity : AppCompatActivity() {
 
     private lateinit var mGoogleSignInClient: GoogleSignInClient
@@ -28,15 +29,12 @@ class MainActivity : AppCompatActivity() {
 
         mAuth = FirebaseAuth.getInstance()
 
-
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
             .requestIdToken(getString(R.string.default_web_client_id))
             .requestEmail()
             .build()
 
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso)
-
-
 
         val textView = findViewById<TextView>(R.id.name)
 
@@ -49,9 +47,6 @@ class MainActivity : AppCompatActivity() {
         } else {
             // Handle the case where the user is not signed in
         }
-
-
-
         // Inside onCreate() method
         val sign_out_button = findViewById<Button>(R.id.logout_button)
         sign_out_button.setOnClickListener {
@@ -62,6 +57,8 @@ class MainActivity : AppCompatActivity() {
     //boton diccionario
         var buttonDiccionario:Button = findViewById(R.id.buttonDiccionario)
         buttonDiccionario.setOnClickListener{pushDiccionario()}
+
+
     }
 
     private fun signOutAndStartSignInActivity() {
