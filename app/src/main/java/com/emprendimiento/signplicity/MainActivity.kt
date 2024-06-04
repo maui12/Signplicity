@@ -58,7 +58,14 @@ class MainActivity : AppCompatActivity() {
         var buttonDiccionario:Button = findViewById(R.id.buttonDiccionario)
         buttonDiccionario.setOnClickListener{pushDiccionario()}
 
+        var buttonPerfil = findViewById<Button>(R.id.buttonPerfil)
+        buttonPerfil.setOnClickListener{pushPerfil()}
 
+
+    }
+
+    private fun pushPerfil() {
+        startActivity(Intent(this,ProfileActivity::class.java))
     }
 
     private fun signOutAndStartSignInActivity() {
