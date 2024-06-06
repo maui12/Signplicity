@@ -61,7 +61,14 @@ class MainActivity : AppCompatActivity() {
         var buttonPerfil = findViewById<Button>(R.id.buttonPerfil)
         buttonPerfil.setOnClickListener{pushPerfil()}
 
+        var buttonJuegos = findViewById<Button>(R.id.buttonJuegos)
+        buttonJuegos.setOnClickListener{pushJuegos()}
 
+
+    }
+
+    private fun pushJuegos() {
+        startActivity(Intent(this,QuizzesActivity::class.java))
     }
 
     private fun pushPerfil() {
