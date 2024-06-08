@@ -40,9 +40,6 @@ class SignInActivity : AppCompatActivity() {
             finish() // finish the current activity to prevent the user from coming back to the SignInActivity using the back button
         }
 
-
-
-
         val signInButton = findViewById<Button>(R.id.buttonGoogleLogin)
         signInButton.setOnClickListener {
             signIn()

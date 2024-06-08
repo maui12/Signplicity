@@ -9,12 +9,13 @@
         android:id="@+id/postContentEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="What's on your mind?" />
+        android:hint="Publica algo..." />
 
     <Button
         android:id="@+id/postButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/button_menu_2_pink"
         android:text="Post" />
 
     <androidx.recyclerview.widget.RecyclerView

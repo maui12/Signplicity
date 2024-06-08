@@ -112,8 +112,6 @@ class ProfileDisplayActivity : AppCompatActivity() {
                 }
             }
 
-
-
             override fun onCancelled(databaseError: DatabaseError) {
                 Toast.makeText(this@ProfileDisplayActivity, "Error al cargar los datos", Toast.LENGTH_SHORT).show()
             }

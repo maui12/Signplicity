@@ -54,7 +54,7 @@ class ProfileActivity : AppCompatActivity() {
             val user = User(username, email, phone, bio)
             if(uid != null) {
                 databaseReference.child(uid).setValue(user).addOnCompleteListener {
-                Toast.makeText(this@ProfileActivity,"Perfil actualizado.",Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@ProfileActivity,"Perfil actualizado.",Toast.LENGTH_SHORT).show()
                 }
             }
         }
@@ -68,9 +68,9 @@ class ProfileActivity : AppCompatActivity() {
 
             Toast.makeText(this@ProfileActivity,"Perfil actualizado",Toast.LENGTH_SHORT).show()
         }
-        .addOnFailureListener {
-            Toast.makeText(this@ProfileActivity,"Error al actualizar perfil",Toast.LENGTH_SHORT).show()
-        }
+            .addOnFailureListener {
+                Toast.makeText(this@ProfileActivity,"Error al actualizar perfil",Toast.LENGTH_SHORT).show()
+            }
     }
 
 }

@@ -61,7 +61,14 @@ class MainActivity : AppCompatActivity() {
         var buttonJuegos = findViewById<Button>(R.id.buttonJuegos)
         buttonJuegos.setOnClickListener{pushJuegos()}
 
+        var buttonNoticias = findViewById<Button>(R.id.buttonNoticias)
+        buttonNoticias.setOnClickListener{pushNoticias()}
 
+
+    }
+
+    private fun pushNoticias() {
+        startActivity(Intent(this,SocialActivity::class.java))
     }
 
     private fun pushJuegos() {

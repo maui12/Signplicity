@@ -58,6 +58,7 @@ dependencies {
     implementation("com.jpardogo.googleprogressbar:library:1.2.0")
     implementation("com.github.bumptech.glide:glide:4.12.0")
     annotationProcessor("com.github.bumptech.glide:compiler:4.12.0")
+    implementation("com.github.dhaval2404:imagepicker:2.1")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
