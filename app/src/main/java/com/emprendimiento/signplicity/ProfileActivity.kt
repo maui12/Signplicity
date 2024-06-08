@@ -1,7 +1,10 @@
 package com.emprendimiento.signplicity
 
+import android.app.Activity
+import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.provider.MediaStore
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -13,6 +16,8 @@ import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
+import java.io.IOException
+import java.util.UUID
 
 class ProfileActivity : AppCompatActivity() {
 
@@ -22,15 +27,13 @@ class ProfileActivity : AppCompatActivity() {
     private lateinit var storageReference: StorageReference
     private lateinit var imageUri: Uri
 
+    companion object {
+        private const val PICK_IMAGE_REQUEST = 1
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_profile)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
 
         binding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -38,6 +41,8 @@ class ProfileActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
         val uid = auth.currentUser?.uid
         databaseReference = FirebaseDatabase.getInstance().getReference("Users")
+
+
 
         binding.saveBtn.setOnClickListener {
 
@@ -53,7 +58,6 @@ class ProfileActivity : AppCompatActivity() {
                 }
             }
         }
-
     }
 
     private fun uploadProfilePic() {
@@ -68,4 +72,5 @@ class ProfileActivity : AppCompatActivity() {
             Toast.makeText(this@ProfileActivity,"Error al actualizar perfil",Toast.LENGTH_SHORT).show()
         }
     }
+
 }

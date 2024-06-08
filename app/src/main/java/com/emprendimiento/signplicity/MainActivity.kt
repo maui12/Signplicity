@@ -48,10 +48,7 @@ class MainActivity : AppCompatActivity() {
             // Handle the case where the user is not signed in
         }
         // Inside onCreate() method
-        val sign_out_button = findViewById<Button>(R.id.logout_button)
-        sign_out_button.setOnClickListener {
-            signOutAndStartSignInActivity()
-        }
+
 
 
     //boton diccionario
@@ -72,19 +69,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun pushPerfil() {
-        startActivity(Intent(this,ProfileActivity::class.java))
+        startActivity(Intent(this,ProfileDisplayActivity::class.java))
     }
 
-    private fun signOutAndStartSignInActivity() {
-        mAuth.signOut()
-
-        mGoogleSignInClient.signOut().addOnCompleteListener(this) {
-            // Optional: Update UI or show a message to the user
-            val intent = Intent(this@MainActivity, SignInActivity::class.java)
-            startActivity(intent)
-            finish()
-        }
-    }
 
     //funcionalidad boton diccionario
     private fun pushDiccionario() {
