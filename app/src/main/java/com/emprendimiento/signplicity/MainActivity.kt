@@ -14,6 +14,8 @@ import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.ktx.Firebase
 
 
@@ -22,6 +24,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var mGoogleSignInClient: GoogleSignInClient
     private lateinit var mAuth: FirebaseAuth
+    private lateinit var databaseReference: DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,22 +39,25 @@ class MainActivity : AppCompatActivity() {
 
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso)
 
-        val textView = findViewById<TextView>(R.id.name)
+        //val textView = findViewById<TextView>(R.id.name)
 
         val auth = Firebase.auth
         val user = auth.currentUser
 
-        if (user != null) {
-            val userName = user.displayName
-            textView.text = userName
-        } else {
-            // Handle the case where the user is not signed in
-        }
-        // Inside onCreate() method
+        //databaseReference = FirebaseDatabase.getInstance().getReference("Users")
+        //databaseReference.child(user?.uid.toString()).get().addOnSuccessListener {
+        //  if(it.exists()) {
+        //val username = it.child("username").value.toString()
+        //  textView.text = username
+        //}
 
+        //if (user != null) {
+        //  val userName = user.displayName
+        //textView.text = userName
+        //} else {
+        // Handle the case where the user is not signed in
+    //}
 
-
-    //boton diccionario
         var buttonDiccionario:Button = findViewById(R.id.buttonDiccionario)
         buttonDiccionario.setOnClickListener{pushDiccionario()}
 

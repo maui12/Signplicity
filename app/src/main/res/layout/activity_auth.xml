@@ -1,26 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
     android:padding="16dp">
 
-    <EditText
-        android:id="@+id/postContentEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="What's on your mind?" />
+    <ImageView
+        android:id="@+id/itemImage"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:scaleType="centerCrop" />
 
-    <Button
-        android:id="@+id/postButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Post" />
+    <ImageView
+        android:id="@+id/playIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_marginStart="16dp" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/postsRecyclerView"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp" />
-
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="16dp"
+        android:textSize="18sp" />
 </LinearLayout>

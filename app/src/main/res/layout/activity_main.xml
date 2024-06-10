@@ -9,24 +9,6 @@
 
 
     <Button
-        android:id="@+id/buttonPerfil"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:background="@drawable/button_menu_3_orange"
-        android:text="Perfil"
-        android:drawableTop="@drawable/profile_icon"
-        android:fontFamily="@font/rowdies_light"
-        android:paddingTop="50dp"
-        android:textSize="18sp"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.877"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.81" />
-
-    <Button
         android:id="@+id/buttonJuegos"
         android:layout_width="150dp"
         android:layout_height="150dp"
@@ -36,32 +18,32 @@
         android:paddingTop="50dp"
         android:text="Juegos"
         android:textAlignment="center"
-        android:textSize="18sp"
         android:textColor="@color/black"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.877"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.497" />
+        app:layout_constraintVertical_bias="0.535" />
 
     <Button
-        android:id="@+id/buttonNoticias"
+        android:id="@+id/buttonPerfil"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:background="@drawable/button_menu_2_pink"
-        android:drawableTop="@drawable/news_icon"
+        android:background="@drawable/button_menu_3_orange"
+        android:drawableTop="@drawable/profile_icon"
         android:fontFamily="@font/rowdies_light"
         android:paddingTop="50dp"
-        android:text="Noticias"
-        android:textSize="18sp"
+        android:text="Perfil"
         android:textColor="@color/black"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintHorizontal_bias="0.877"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.81" />
+        app:layout_constraintVertical_bias="0.848" />
 
     <Button
         android:id="@+id/buttonDiccionario"
@@ -73,14 +55,32 @@
         android:paddingTop="50dp"
         android:text="Diccionario"
         android:textAlignment="center"
-        android:textSize="18sp"
         android:textColor="@color/black"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.153"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.497" />
+        app:layout_constraintVertical_bias="0.535" />
+
+    <Button
+        android:id="@+id/buttonNoticias"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/button_menu_2_pink"
+        android:drawableTop="@drawable/news_icon"
+        android:fontFamily="@font/rowdies_light"
+        android:paddingTop="50dp"
+        android:text="Noticias"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.848" />
 
 
     <TextView
@@ -96,20 +96,24 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.121" />
+        app:layout_constraintVertical_bias="0.097" />
 
     <TextView
-        android:id="@+id/name"
+        android:id="@+id/diviertete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cargando.."
+        android:fontFamily="@font/rowdies_light"
+        android:text="¡Diviertete aprendiendo lengua de señas!"
+        android:textColor="@color/black"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/maintitle"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/maintitle"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.269" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

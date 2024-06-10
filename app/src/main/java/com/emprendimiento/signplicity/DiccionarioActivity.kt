@@ -1,20 +1,29 @@
 package com.emprendimiento.signplicity
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
 class DiccionarioActivity : AppCompatActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_diccionario)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
+
+        val categorias = listOf(
+            Categoria("Abecedario", R.drawable.signplicity_logo),
+            Categoria("Colores", R.drawable.google_logo),
+            Categoria("Números", R.drawable.profile_default_pic),
+            Categoria("Saludos", R.drawable.ic_launcher_foreground),
+            Categoria("Saludos", R.drawable.ic_launcher_foreground),
+            Categoria("Saludos", R.drawable.ic_launcher_foreground),
+            Categoria("Saludos", R.drawable.ic_launcher_foreground),
+        )
+
+        val recyclerView: RecyclerView = findViewById(R.id.recyclerView)
+        recyclerView.layoutManager = LinearLayoutManager(this)
+        recyclerView.adapter = CategoriaAdapter(categorias)
     }
 }

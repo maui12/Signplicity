@@ -66,7 +66,6 @@ class ProfileDisplayActivity : AppCompatActivity() {
 
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso)
 
-        val textView = findViewById<TextView>(R.id.name)
 
         val auth = Firebase.auth
         val user = auth.currentUser
