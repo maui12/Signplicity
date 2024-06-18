@@ -13,13 +13,13 @@ class DiccionarioActivity : AppCompatActivity() {
         setContentView(R.layout.activity_diccionario)
 
         val categorias = listOf(
-            Categoria("Abecedario", R.drawable.signplicity_logo),
-            Categoria("Colores", R.drawable.google_logo),
-            Categoria("Números", R.drawable.profile_default_pic),
-            Categoria("Saludos", R.drawable.ic_launcher_foreground),
-            Categoria("Saludos", R.drawable.ic_launcher_foreground),
-            Categoria("Saludos", R.drawable.ic_launcher_foreground),
-            Categoria("Saludos", R.drawable.ic_launcher_foreground),
+            Categoria("Abecedario", R.drawable.dc_abecedario_logo),
+            Categoria("Colores", R.drawable.dc_colores_logo),
+            Categoria("Números", R.drawable.dc_numeros_logo),
+            Categoria("Saludos", R.drawable.dc_saludos_logo),
+            Categoria("Acciones", R.drawable.dc_acciones_logo),
+            Categoria("Días", R.drawable.dc_calendario_logo),
+            Categoria("Animales", R.drawable.dc_animales_logo),
         )
 
         val recyclerView: RecyclerView = findViewById(R.id.recyclerView)

@@ -27,16 +27,32 @@ class QuizzesActivity : AppCompatActivity() {
 
 
         val listQuestionModel = mutableListOf<QuestionModel>()
-        listQuestionModel.add(QuestionModel("Hola como estas", mutableListOf("bien","bien","bien","bien"),"bien",R.drawable.signplicity_logo))
-        listQuestionModel.add(QuestionModel("como se llama", mutableListOf("gato","libro","auto","palo"),"libro",R.drawable.dictionary_icon))
+        listQuestionModel.add(QuestionModel("Selecciona la opción correcta:", mutableListOf("A","D","B","C"),"D",R.drawable.dc_d))
+        listQuestionModel.add(QuestionModel("Selecciona la opción correcta:", mutableListOf("E","F","G","A"),"A",R.drawable.dc_a))
+        listQuestionModel.add(QuestionModel("Selecciona la opción correcta:", mutableListOf("B","H","D","I"),"I",R.drawable.dc_i))
+        listQuestionModel.add(QuestionModel("Selecciona la opción correcta:", mutableListOf("B","E","A","C"),"E",R.drawable.dc_e))
+        listQuestionModel.add(QuestionModel("Selecciona la opción correcta:", mutableListOf("H","D","G","C"),"H",R.drawable.dc_h))
 
         val listQuestionModel2 = mutableListOf<QuestionModel>()
-        listQuestionModel2.add(QuestionModel("como se llama", mutableListOf("gato","libro","auto","control"),"control",R.drawable.games_icon))
+        listQuestionModel2.add(QuestionModel("Selecciona la opción correcta:", mutableListOf("M","L","J","I"),"M",R.drawable.dc_m))
+        listQuestionModel2.add(QuestionModel("Selecciona la opción correcta:", mutableListOf("N","R","O","P"),"P",R.drawable.dc_p))
+        listQuestionModel2.add(QuestionModel("Selecciona la opción correcta:", mutableListOf("Q","O","J","C"),"J",R.drawable.dc_j))
+        listQuestionModel2.add(QuestionModel("Selecciona la opción correcta:", mutableListOf("G","O","K","L"),"O",R.drawable.dc_o))
+        listQuestionModel2.add(QuestionModel("Selecciona la opción correcta:", mutableListOf("N","M","F","C"),"N",R.drawable.dc_n))
 
         val listQuestionModel3 = mutableListOf<QuestionModel>()
-        listQuestionModel3.add(QuestionModel("como se llama la app", mutableListOf("signplicity","no","mal","bien"),"signplicity",R.drawable.signplicity_logo))
+        listQuestionModel3.add(QuestionModel("Selecciona la opción correcta:", mutableListOf("U","T","P","W"),"U",R.drawable.dc_u))
+        listQuestionModel3.add(QuestionModel("Selecciona la opción correcta:", mutableListOf("X","V","R","Z"),"R",R.drawable.dc_r))
+        listQuestionModel3.add(QuestionModel("Selecciona la opción correcta:", mutableListOf("K","Q","Y","T"),"T",R.drawable.dc_t))
+        listQuestionModel3.add(QuestionModel("Selecciona la opción correcta:", mutableListOf("P","Z","W","S"),"Z",R.drawable.dc_z))
+        listQuestionModel3.add(QuestionModel("Selecciona la opción correcta:", mutableListOf("M","B","T","Q"),"Q",R.drawable.dc_q))
 
-        quizModelList.add(QuizModel("1","letras","muchas letras",listQuestionModel,listQuestionModel2,listQuestionModel3))
+
+        quizModelList.add(QuizModel("1","Abecedario","Responde las siguientes preguntas!",listQuestionModel,listQuestionModel2,listQuestionModel3))
+        quizModelList.add(QuizModel("2","Números","Responde las siguientes preguntas!",listQuestionModel,listQuestionModel2,listQuestionModel3))
+        quizModelList.add(QuizModel("3","Colores","Responde las siguientes preguntas!",listQuestionModel,listQuestionModel2,listQuestionModel3))
+        quizModelList.add(QuizModel("4","Saludos","Responde las siguientes preguntas!",listQuestionModel,listQuestionModel2,listQuestionModel3))
+        quizModelList.add(QuizModel("1","Colores","Responde las siguientes preguntas!",listQuestionModel,listQuestionModel2,listQuestionModel3))
         setupRecyclerView()
     }
 
